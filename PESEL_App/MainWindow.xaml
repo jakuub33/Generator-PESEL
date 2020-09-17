@@ -1,0 +1,22 @@
+﻿<Window x:Class="PESEL_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PESEL_App"
+        mc:Ignorable="d"
+        Title="Generator numeru PESEL" Width="400" Height="466.8" ResizeMode="CanMinimize" Icon="person_white.png">
+
+    <Grid Background="#FF313131">
+        <TextBox x:Name="txtPesel" HorizontalAlignment="Left" Height="37" Margin="116,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" FontSize="24" MaxLength="11" BorderBrush="{x:Null}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="87,29,0,0" TextWrapping="Wrap" Text="Podaj datę urodzenia" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="127,128,0,0" TextWrapping="Wrap" Text="Wybierz płeć" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
+        <RadioButton x:Name="rbK" Margin="67,175,0,0" Cursor="Hand" Foreground="White" Height="19" Width="105" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Kobieta"/>
+        <RadioButton x:Name="rbM" Margin="222,175,0,0" Cursor="Hand" Foreground="White" Height="19" Width="102" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Mężczyzna"/>
+        <DatePicker x:Name="dpDateBirth" HorizontalAlignment="Left" Margin="144,76,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" FontSize="14" Cursor="Hand"/>        
+        <Button x:Name="btnGenerate" Content="Wygeneruj numer PESEL" HorizontalAlignment="Left" Margin="65,217,0,0" VerticalAlignment="Top" Width="257" FontSize="22" Foreground="White" 
+            BorderThickness="2" BorderBrush="White" Background="#FF1D1D1D" Click="btnGenerate_Click" Cursor="Hand"/>        
+        <Button x:Name="btnClear" Content="Wyczyść" HorizontalAlignment="Left" Margin="65,363,0,0" VerticalAlignment="Top" Width="257" FontSize="22" Foreground="White" 
+            BorderThickness="2" BorderBrush="White" Background="#FF1D1D1D" Click="btnClear_Click" Cursor="Hand"/>
+    </Grid>
+</Window>
